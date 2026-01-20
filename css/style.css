@@ -1,0 +1,97 @@
+:root {
+  --bg: #f5f5f5;
+  --text: #000;
+  --card: #ffffff;
+  --accent: #4caf50;
+}
+
+.dark {
+  --bg: #121212;
+  --text: #ffffff;
+  --card: #1f1f1f;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  width: 320px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+#themeBtn {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 18px;
+}
+
+#search {
+  width: 90%;
+  margin: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.options button {
+  padding: 6px 8px;
+  border: none;
+  background: var(--card);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.options button:hover {
+  transform: scale(1.05);
+  background: var(--accent);
+  color: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  padding: 10px;
+}
+
+.site {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  background: var(--card);
+  color: var(--text);
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.site:hover {
+  transform: scale(1.05);
+  background: var(--accent);
+  color: white;
+}
+
+.fav {
+  cursor: pointer;
+  font-size: 18px;
+}
